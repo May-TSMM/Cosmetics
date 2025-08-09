@@ -308,12 +308,13 @@ button.r-btn:hover a{
 /* cosmetics */
 
 section#cosmetics {
-    padding: 30px;
+    background-color: rgb(200, 240, 249);
+    padding: 50px;
+
 }
 
 .c-box {
     padding: 30px;
-    background-color: rgb(200, 240, 249);
     position: relative;
 }
 
@@ -349,4 +350,40 @@ section#cosmetics {
     font-size: 16px;
 }
 
+/* best seller */
 
+section.best-seller {
+    margin: 30px 0 30px;
+    padding: 0 50px;
+}
+
+.content {
+    padding: 16px 0 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.content .title h2{
+    color: #c400ff;
+    font-size: 20px;
+}
+
+.content .seemore h3 a{
+    text-decoration: none;
+    color: #474141e8;
+    border: 2px #000 solid;
+    padding: 6px 10px;
+}
+
+.lipstick-group {
+    border-top: 2px solid #000;
+    padding: 30px 0 20px;
+    display: flex;
+    gap: 10px;
+    justify-content: space-around;
+}
+
+.lipstick-item img{
+    width: 400px;
+    height: 300px;
+}
