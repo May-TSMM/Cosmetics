@@ -1,0 +1,355 @@
+* { 
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+  font-family: "Space Grotesk", sans-serif;
+}
+
+img {
+    max-width: 100%;
+}
+
+/*Top Header*/
+
+.T-head {
+    background-color: #064f80;
+    display: flex;
+    padding: 30px 0 25px;
+    justify-content: center;
+}
+
+.T-head ul {
+    display: flex;
+    list-style-type: none;
+    gap: 30px;
+}
+
+.T-head ul li a {
+    text-decoration: none;
+    color: #fff;
+    transition: 0.5s ease-in-out;
+    font-size: 20px;
+    position: relative; /* Added for ::after positioning */
+}
+
+.T-head ul li a:hover {
+    color: #2b296d;
+}
+
+.T-head .T-item a::after {
+    content: "";
+    position: absolute;
+    bottom: -8px;
+    height: 1.5px;
+    width: 100%;
+    left: 0;
+    background-color: #f4fff8;
+    transition: 0.3s ease-in-out;
+    transform: scaleX(0);
+}
+
+.T-head li.T-item a:hover::after {
+    transform: scaleX(1);
+}
+ /*For Header*/
+
+.saren {
+    background-color: rgb(37, 39, 96);
+}
+
+.saren header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 10px 30px 10px;
+}
+
+.brand-logo {
+    flex: 1;
+}
+
+.brand-logo h2 {
+    color: #FF00FF;
+}
+.containter {
+    flex: 11;
+}
+form.search-box {
+    display: flex;
+}
+
+.search-box input{
+    width: 400px;
+    height: 30px;
+    border: 2px rgba(0, 0, 0, 0) solid;
+    border-radius: 60px;
+    background-color: rgb(210, 225, 249);
+    padding-left: 10px;
+    cursor: pointer;
+}
+
+.search-box button {
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+    translate: -30px 2px;
+    cursor: pointer;
+}
+.search-box button img{
+    width: 20px;
+    height: 20px;
+}
+
+.nav-bar ul {
+    display: flex;
+    gap: 20px;
+}
+.nav-bar ul li.link {
+    list-style-type: none;
+}
+
+.nav-bar ul li.link a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 17px;
+    position: relative;
+}
+
+.nav-bar ul li.link a:hover {
+    color: rgb(42, 8, 238);
+}
+
+.nav-bar ul li.link a::after {
+    content: " ";
+    position: absolute;
+    bottom: -8px;
+    height: 1.5px;
+    width: 100%;
+    left: 0;
+    background-color: #f4fff8;
+    transition: 0.3s;
+    transition-timing-function: ease-in-out;
+    transform: scaleX(0);
+}
+
+.nav-bar ul li.link a:hover::after {
+    transform: scaleX(1);
+}
+ /*For section*/
+
+
+.intro-part {
+    height: 560px;
+}
+
+section.intro-part {
+    background-image: url("images/makeup1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.intro-part .title h2 {
+    position: relative;
+    padding-left: 30px;
+    padding-top: 140px;
+    color: #fff;
+    font-size: 40px;
+    padding-bottom: 40px;
+    animation-name: title;
+    animation-duration: 2s;
+    animation-delay: 0.2s;
+}
+
+@keyframes title {
+      0% {
+        transform: translateY(-300px);
+        opacity: 0;
+    }
+
+    25% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+    50% {
+        transform: translateY(-50px);
+        opacity: 1;
+    }
+
+    80% {
+        transform: translateY(0);
+        opacity: 1;
+         color: rgb(238, 136, 229);
+    }
+
+    100% {
+        transform: translate(0);
+        opacity: 1;
+}
+}
+
+.intro-part .btn button {
+    margin-left: 80px;
+    padding: 2px;
+    width: 150px;
+    height: 50px;
+    border-radius: 50px;
+    border: 2px solid #fff;
+    background-color: rgb(200, 51, 250);
+    box-shadow: #fcebfc 0 0 8px;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+}
+
+    /*For part1 section btn*/
+
+.btn button:hover {
+    background-color: #fff;
+    border: 2px rgb(200, 51, 250) solid;
+    box-shadow: hsl(300, 100%, 75%) 0 0 8px;
+}
+
+.btn button a {
+    font-weight: 600;
+    color: #fff;
+    font-size: 18px;
+    text-decoration: none;
+    transition: 0.4ms ease-in-out;
+}
+
+.btn button:hover a{
+    color: rgb(200, 51, 250);
+}
+
+    /*For Product section*/
+
+.Product {
+    background: rgb(244, 244, 210);
+    padding: 50px 60px 10px;
+    color: #2f033a;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.Product h2 {
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+.Product .p-about {
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(rgb(0, 9, 128),rgb(93, 163, 8),rgb(11, 148, 216),rgb(0,3,44));
+    display: flex;
+    gap: 20px;
+    line-height: 19px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 
+    0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    padding: 50px;
+    color: #fff;
+    border-radius: 10px;
+}
+
+
+.p-about h3 {
+    padding-bottom: 10px;
+}
+.p-about p.pgh {
+    padding-bottom: 6px;
+}
+.p-about .p-text {
+    padding-bottom: 20px;
+}
+.p-about .thanaka {
+    flex: 50%;
+}
+
+.p-about .thanaka-img {
+    flex: 50%;
+}
+
+.p-about .thanaka-img img {
+    border-radius: 10px;
+    transition: 0.33s ease-in-out;
+}
+
+button.r-btn {
+    display: block;
+    margin: 20px;
+    padding: 10px;
+    background-color: #fff;
+    border: 2px solid #38fe3b;
+    border-radius: 10px;
+    box-shadow: #38fe3b 0 0 8px;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+}
+
+button.r-btn:hover {
+    box-shadow: #f77410 0 0 8px;
+    border: 2px solid #f3bf98;
+}
+
+button.r-btn a {
+    text-decoration: none;
+    color: #4943f2;
+    font-weight: 600;
+    transition: color 0.2ms ease-in;
+}
+
+button.r-btn:hover a{
+    color: #f77410;
+}
+
+.thanaka-img:hover img{
+    transform: translateY(-33px);
+}
+
+/* cosmetics */
+
+section#cosmetics {
+    padding: 30px;
+}
+
+.c-box {
+    padding: 30px;
+    background-color: rgb(200, 240, 249);
+    position: relative;
+}
+
+.c-box h2 {
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+.c-box .link {
+    position: absolute;
+    translate: 40px 130px;
+}
+
+.link h3 {
+    padding-bottom: 10px;
+    color: #2f033a;
+}
+.c-box .link a{
+    display: block;
+    color: #ffffff;
+    padding-bottom: 22px;
+    font-size: 20px;
+}
+
+.link a:hover {
+    color: rgb(255, 115, 0);
+}
+
+.c-box .c-text p {
+    text-indent: 30px;
+    text-align: justify;
+    padding: 10px 0 20px;
+    font-size: 16px;
+}
+
+
