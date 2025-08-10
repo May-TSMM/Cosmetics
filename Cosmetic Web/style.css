@@ -15,31 +15,35 @@ img {
 /*Top Header*/
 
 .T-head {
-    background-color: #064f80;
+    background-color: #f0fffc;
     display: flex;
-    padding: 30px 0 25px;
-    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 40px 15px;
 }
 
-.T-head ul {
+.T-head .T-links {
+    flex: 1;
+}
+.T-head .T-links ul {
     display: flex;
     list-style-type: none;
     gap: 30px;
 }
 
-.T-head ul li a {
+.T-links ul li a {
     text-decoration: none;
-    color: #fff;
+    color: #211b2d;
     transition: 0.5s ease-in-out;
     font-size: 20px;
     position: relative; /* Added for ::after positioning */
 }
 
-.T-head ul li a:hover {
+.T-links ul li a:hover {
     color: #2b296d;
 }
 
-.T-head .T-item a::after {
+.T-links .T-item a::after {
     content: "";
     position: absolute;
     bottom: -8px;
@@ -51,13 +55,23 @@ img {
     transform: scaleX(0);
 }
 
-.T-head li.T-item a:hover::after {
+.T-links li.T-item a:hover::after {
     transform: scaleX(1);
+}
+
+.T-head .s-cart {
+    display: flex;
+    gap: 22px;
+    justify-content: flex-end;
+}
+
+.T-head .s-cart a img {
+    max-width: 20px;
 }
  /*For Header*/
 
 .saren {
-    background-color: rgb(37, 39, 96);
+    background-color: #511D66;
 }
 
 .saren header {
@@ -65,7 +79,7 @@ img {
     justify-content: center;
     align-items: center;
     gap: 20px;
-    padding: 10px 30px 10px;
+    padding: 0 30px 0;
 }
 
 .brand-logo {
@@ -383,7 +397,17 @@ section.best-seller {
     justify-content: space-around;
 }
 
-.lipstick-item img{
+.products-item {
+    overflow: hidden;
+    height: 400px;
+}
+.products-item img {
     width: 300px;
     height: 400px;
+    transform: scale(1);
+    transition: transform 0.5s ease;
+}
+
+.products-item:hover img {
+    transform: scale(1.2);
 }
