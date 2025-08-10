@@ -30,16 +30,16 @@ img {
     color: #ff69b4;
 }
 
-.T-head .T-links {
+.T-head .T-nav {
     flex: 1;
 }
-.T-head .T-links ul {
+.T-head .T-nav ul {
     display: flex;
     list-style-type: none;
     gap: 30px;
 }
 
-.T-links ul li a {
+.T-nav ul li a {
     text-decoration: none;
     color: #211b2d;
     transition: 0.5s ease-in-out;
@@ -47,11 +47,11 @@ img {
     position: relative; /* Added for ::after positioning */
 }
 
-.T-links ul li a:hover {
+.T-nav ul li a:hover {
     color: #1e17ec;
 }
 
-.T-links .T-item a::after {
+.T-nav .T-item a::after {
     content: "";
     position: absolute;
     bottom: -8px;
@@ -63,7 +63,7 @@ img {
     transform: scaleX(0);
 }
 
-.T-links li.T-item a:hover::after {
+.T-nav li.T-item a:hover::after {
     transform: scaleX(1);
 }
 
