@@ -22,6 +22,14 @@ img {
     padding: 15px 40px 15px;
 }
 
+.T-head .T-text {
+    flex: 1;
+}
+
+.T-text h3 {
+    color: #ff69b4;
+}
+
 .T-head .T-links {
     flex: 1;
 }
@@ -40,18 +48,18 @@ img {
 }
 
 .T-links ul li a:hover {
-    color: #2b296d;
+    color: #1e17ec;
 }
 
 .T-links .T-item a::after {
     content: "";
     position: absolute;
     bottom: -8px;
-    height: 1.5px;
+    height: 1.2px;
     width: 100%;
     left: 0;
-    background-color: #f4fff8;
-    transition: 0.3s ease-in-out;
+    background-color: #7b76b3;
+    transition: 0.5s ease-in-out;
     transform: scaleX(0);
 }
 
