@@ -94,7 +94,7 @@ img {
     flex: 1;
 }
 
-.containter {
+.search-bar {
     flex: 11;
 }
 form.search-box {
@@ -419,3 +419,112 @@ section.best-seller {
 .products-item:hover img {
     transform: scale(1.2);
 }
+
+/* form page */
+
+.S-form {
+    border: solid rgb(154, 154, 154);
+    border-radius: 3px;
+    background-color: #ffffff;
+   width: 400px;
+   height: 500px;
+   margin: 0 auto;
+}
+
+form h2{
+    text-align: center;
+    font-size: 20px;
+    font-family: "Brush Script MT", "Lucida Handwriting", cursive;
+    padding: 60px 0 50px;
+}
+
+.form-content {
+    padding-left: 50px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.form-content  p{
+    font-size: 17px;
+    font-weight: 100;
+    color: rgb(154, 137, 82);
+    
+}
+
+div.container {
+    width: 300px;
+    margin: 0 auto;
+}
+
+div.container .signin {
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+
+.signin button {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #f4a2f5a4;
+    background-color: #2aa1c5;
+    cursor: pointer;
+    border-radius: 7px;
+    color: #fff;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: 0.4s ease-in-out;
+}
+
+.signin button:hover {
+    background-color: #1769ec;
+}
+
+div.container .form-text p{
+    text-align: center;
+}
+
+div.container .form-item {
+    padding: 30px 0 2px;
+}
+
+#email{
+    width: 285px;
+    border-radius: 7px;
+    border: 2px solid rgb(169, 169, 169);
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.form-item button.submit {
+    width: 300px;
+    padding: 10px;
+    color: #ffffff;
+    border: 2px solid #f4a2f5a4;
+    background-color: #2aa1c5;
+    cursor: pointer;
+    border-radius: 7px;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: 0.4s ease-in-out;
+}
+
+button.submit:hover {
+    background-color: #1769ec;
+}
+.form-links {
+    padding: 0 0 20px;
+    display: flex;
+    gap: 22px;
+}
+
+.form-links a {
+    text-decoration: none;
+    color: #7b76b3;
+    font-size: 14px;
+    transition: 0.3s ease-in;
+}
+
+.form-links a:hover {
+    text-decoration: underline rgb(59, 59, 70);
+    color: #195fd0;
+}
+
